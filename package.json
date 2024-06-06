@@ -1,4 +1,14 @@
 {
+  "name": "RoomMatch",
+  "version": "1.0.0",
+  "description": "Website to help students find out which roomates will be best for them",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+
+
+
   "dependencies": {
     "bcrypt": "^5.1.1",
     "dotenv": "^16.4.5",
