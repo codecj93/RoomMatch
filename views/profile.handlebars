@@ -1,0 +1,20 @@
+<div class="container">
+  <h2>Your Profile</h2>
+  <form class="profile-form" action="/profile" method="POST">
+    <input type="text" name="firstName" placeholder="First Name" value="{{profile.firstName}}" required>
+    <input type="text" name="lastName" placeholder="Last Name" value="{{profile.lastName}}" required>
+    <input type="number" name="age" placeholder="Age" value="{{profile.age}}" required>
+    <select name="gender" required>
+      <option value="Male" {{#if (eq profile.gender 'Male')}}selected{{/if}}>Male</option>
+      <option value="Female" {{#if (eq profile.gender 'Female')}}selected{{/if}}>Female</option>
+      <option value="Other" {{#if (eq profile.gender 'Other')}}selected{{/if}}>Other</option>
+    </select>
+    <textarea name="hobbies" placeholder="Hobbies">{{profile.hobbies}}</textarea>
+    <textarea name="interests" placeholder="Interests">{{profile.interests}}</textarea>
+    <button type="submit">Update Profile</button>
+  </form>
+  <div class="profile-actions">
+    <a href="/matches">View Matches</a>
+    <a href="/logout">Logout</a>
+  </div>
+</div>
