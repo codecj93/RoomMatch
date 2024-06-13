@@ -3,11 +3,11 @@ const router = require('express').Router();
 // Import the index.js from 'api' folder
 
 // const projectRoutes = require('./projectRoutes');
-const userRoutes = require('./userRoutes');
+const loginRoutes = require('./loginRoutes');
 
 
 // When a request is made to the /api route, it will be directed to the index.js in the 'api' folder.
 // router.use('/project', projectRoutes);
-router.use('/user', userRoutes);
+router.use('/login', loginRoutes);
 
 module.exports = router;;
