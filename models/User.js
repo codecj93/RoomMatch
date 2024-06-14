@@ -82,43 +82,53 @@ User.init(
             allowNull: false
         },
         question1: {
-            type: DataTypes.ENUM('Messy', 'Clean'),
+            type: DataTypes.ENUM,
+            values: ['Messy', 'Clean'],
             allowNull: false
         },
         question2: {
-            type: DataTypes.ENUM('Night Owl', 'Early Sleeper'),
+            type: DataTypes.ENUM,
+            values:['Night Owl', 'Early Sleeper'],
             allowNull: false
         },
         question3: {
-            type: DataTypes.ENUM('Partygoer', 'Homebody'),
+            type: DataTypes.ENUM,
+            values: ['Partygoer', 'Homebody'],
             allowNull: false
         },
         question4: {
-            type: DataTypes.ENUM('Gym Rat', 'Allergic to the Gym'),
+            type: DataTypes.ENUM,
+            values: ['Gym Rat', 'Allergic to the Gym'],
             allowNull: false
         },
         question5: {
-            type: DataTypes.ENUM('TV Connoisseur', 'TV is not really my thing'),
+            type: DataTypes.ENUM,
+            values: ['TV Connoisseur', 'TV is not really my thing'],
             allowNull: false
         },
         question6: {
-            type: DataTypes.ENUM('Always playing music', 'Peace and Quiet'),
+            type: DataTypes.ENUM,
+            values: ['Always playing music', 'Peace and Quiet'],
             allowNull: false
         },
         question7: {
-            type: DataTypes.ENUM('Enjoys the Outdoors', 'Not a nature fan'),
+            type: DataTypes.ENUM,
+            values: ['Enjoys the Outdoors', 'Not a nature fan'],
             allowNull: false
         },
         question8: {
-            type: DataTypes.ENUM('Fall or Spring type of person', 'Winter or Summer type of person'),
+            type: DataTypes.ENUM,
+            values: ['Fall or Spring type of person', 'Winter or Summer type of person'],
             allowNull: false
         },
         question9: {
-            type: DataTypes.ENUM('Marvel', 'DC'),
+            type: DataTypes.ENUM,
+            values: ['Marvel', 'DC'],
             allowNull: false
         },
         question10: {
-            type: DataTypes.ENUM('Early Riser', 'Late Sleeper'),
+            type: DataTypes.ENUM,
+            values: ['Early Riser', 'Late Sleeper'],
             allowNull: false
         },
 
