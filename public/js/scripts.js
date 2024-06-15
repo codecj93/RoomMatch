@@ -4,6 +4,7 @@ const registerForm = document.querySelector("#register");
 
 registerForm.addEventListener("submit", async (event) => {
     event.preventDefault();
+   
 
     const firstname = document.querySelector("#firstname").value;
     const lastname = document.querySelector("#lastname").value;
@@ -26,6 +27,7 @@ const userData = {
 
 await registerUser(userData);
 
+
 });
 
 console.log('User Data:', userData);
@@ -33,7 +35,7 @@ console.log('User Data:', userData);
 
     const registerUSer = async (userData) => {
         try {
-            const response = await fetch("/api/register", {
+            const response = await fetch("/users", {
                 method: "POST",
                 headers: {
                     'Content-Type': "application/json"

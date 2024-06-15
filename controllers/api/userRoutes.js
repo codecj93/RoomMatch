@@ -3,7 +3,7 @@ const {User} = require('../../models')
 
 
 
-router.post('/register', async (req, res) => {
+router.post('/users', async (req, res) => {
     try {
       const newUser = await User.create(req.body);
       await newUser.save()
