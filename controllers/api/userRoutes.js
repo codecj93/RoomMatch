@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const {User} = require('../../models')
 
+
+
 router.post('/register', async (req, res) => {
     try {
       const newUser = await User.create(req.body);
@@ -11,3 +13,4 @@ router.post('/register', async (req, res) => {
   });
 
   module.exports = router
+

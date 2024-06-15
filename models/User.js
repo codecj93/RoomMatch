@@ -81,52 +81,52 @@ User.init(
             values: ['Sports', 'Museums', 'Reading', 'Dance', 'Gardening', 'Painting', 'Writing', 'Drawing', 'Musical Instrument', 'Hiking', 'Exercise', 'Baking', 'Cooking', 'Yoga', 'Knitting', 'Games and Puzzles', 'Shopping', 'Photography', 'Blogging'],
             allowNull: false
         },
-        question1: {
+        Preferences1: {
             type: DataTypes.ENUM,
             values: ['Messy', 'Clean'],
             allowNull: false
         },
-        question2: {
+        Preferences2: {
             type: DataTypes.ENUM,
             values:['Night Owl', 'Early Sleeper'],
             allowNull: false
         },
-        question3: {
+        Preferences3: {
             type: DataTypes.ENUM,
             values: ['Partygoer', 'Homebody'],
             allowNull: false
         },
-        question4: {
+        Preferences4: {
             type: DataTypes.ENUM,
             values: ['Gym Rat', 'Allergic to the Gym'],
             allowNull: false
         },
-        question5: {
+        Preferences5: {
             type: DataTypes.ENUM,
             values: ['TV Connoisseur', 'TV is not really my thing'],
             allowNull: false
         },
-        question6: {
+        Preferences6: {
             type: DataTypes.ENUM,
             values: ['Always playing music', 'Peace and Quiet'],
             allowNull: false
         },
-        question7: {
+        Preferences7: {
             type: DataTypes.ENUM,
             values: ['Enjoys the Outdoors', 'Not a nature fan'],
             allowNull: false
         },
-        question8: {
+        Preferences8: {
             type: DataTypes.ENUM,
             values: ['Fall or Spring type of person', 'Winter or Summer type of person'],
             allowNull: false
         },
-        question9: {
+        Preferences9: {
             type: DataTypes.ENUM,
             values: ['Marvel', 'DC'],
             allowNull: false
         },
-        question10: {
+        Preferences10: {
             type: DataTypes.ENUM,
             values: ['Early Riser', 'Late Sleeper'],
             allowNull: false

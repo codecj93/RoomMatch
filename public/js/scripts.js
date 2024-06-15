@@ -1,6 +1,8 @@
 const registerForm = document.querySelector("#register");
 
-registerForm.addEventListener("submit", (event) => {
+
+
+registerForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const firstname = document.querySelector("#firstname").value;
@@ -10,34 +12,44 @@ registerForm.addEventListener("submit", (event) => {
     const city = document.querySelector("#city").value;
     const state = document.querySelector("#password").value;
     const country = document.querySelector("#country").value;
-   
 
 
-    fetch("/api/users/", {
-        method: "POST",
-        body: JSON.stringify({
-            firstname,
-            lastname,
-            email,
-            password,
-            city,
-            state,
-            country
-        }),
-        headers: {
-            'Content-Type': "application/json"
-        }
-    })
-    .then((res) => {
-        if(res.status == 200) {
-            console.log("User signup successful!")
-            window.location.href = "/dashboard"
-        } else if(res.status == 400) {
-            console.log('Something went wrong!')
-        }
-    })
-})
+const userData = {
+    firstname,
+    lastname,
+    email,
+    password,
+    city,
+    state,
+    country,
+};
 
+await registerUser(userData);
+
+});
+
+console.log('User Data:', userData);
+
+
+    const registerUSer = async (userData) => {
+        try {
+            const response = await fetch("/register", {
+                method: "POST",
+                headers: {
+                    'Content-Type': "application/json"
+                },
+                body: JSON.stringify(userData)
+                });
+                console.log('Response status:', response.status);
+                const data = await response.json();
+                console.log('Response data:', data);
+                console.log(data);
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        };
+    
+        
 
 
 
