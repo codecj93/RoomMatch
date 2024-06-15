@@ -1,8 +1,14 @@
-<div class="container">
-  <h1>Welcome to RoomMatch</h1>
-  <p>Find your perfect roommate based on shared hobbies and interests.</p>
-  <div class="home-actions">
-    <a href="/register">Sign Up</a>
-    <a href="/login">Log In</a>
-  </div>
+<div class="home-page">
+  <h2>Find Your Perfect Roommate</h2>
+  <form action="/match" method="POST">
+    <input type="text" name="interests" placeholder="Enter your interests" required>
+    <select name="hobbies" required>
+      <option value="">Select your hobbies</option>
+      <option value="sports">Sports</option>
+      <option value="music">Music</option>
+      <option value="reading">Reading</option>
+      <!-- Add more options if needed -->
+    </select>
+    <button type="submit">Match Me!</button>
+  </form>
 </div>

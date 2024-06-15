@@ -1,0 +1,15 @@
+<div class="about-page">
+  <h2>About Us</h2>
+  <p>RoomMatch is dedicated to enhancing the student hostel experience by matching students with compatible roommates based on shared interests and hobbies. Our mission is to create a supportive and enjoyable living environment that fosters personal and academic growth.</p>
+  
+  <h3>Meet the Team</h3>
+  <div class="team">
+    {{#each team}}
+    <div class="team-member">
+      <img src="{{this.image}}" alt="{{this.name}}">
+      <h3>{{this.name}}</h3>
+      <p>{{this.role}}</p>
+    </div>
+    {{/each}}
+  </div>
+</div>

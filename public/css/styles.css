@@ -1,64 +1,210 @@
+/* General Styles */
 body {
-    padding-top: 56px; 
-    background-color: #f8f9fa;
-}
-
-.navbar-custom {
-    background-color: #343a40; 
-}
-
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav .nav-link {
-    color: #ffffff;
-}
-
-.navbar-custom .navbar-nav .nav-link:hover {
-    color: #cccccc; 
-}
-
-
-.card-custom {
-    margin-top: 20px;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-}
-
-.profile-img {
-    width: 100%; 
-    height: auto;
-    border-radius: 50%; 
-}
-
-.profile-info {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-}
-
-.match-card {
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation Bar */
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    border-radius: 3px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #45a049;
+  }
+  
+  /* Home Page */
+  .home-page {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .home-page h2 {
+    font-size: 2em;
     margin-bottom: 20px;
-}
-
-.match-score {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.form-group label {
-    font-weight: bold;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
-}
-
-.footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 20px 0;
+  }
+  
+  .home-page form input,
+  .home-page form select {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .home-page form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .home-page form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Login and Register Pages */
+  .auth-page {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-page h2 {
     text-align: center;
-}
+    margin-bottom: 20px;
+  }
+  
+  .auth-page form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+  }
+  
+  .auth-page form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .auth-page form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Profile Page */
+  .profile-page {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-page .profile-info {
+    margin-bottom: 20px;
+  }
+  
+  .profile-page .profile-info label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .profile-page .profile-info input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+  }
+  
+  .profile-page .profile-info button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .profile-page .profile-info button:hover {
+    background-color: #45a049;
+  }
+  
+  /* About Us Page */
+  .about-page {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .about-page h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-page p {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .about-page .team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-page .team-member {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+  }
+  
+  .about-page .team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .about-page .team-member h3 {
+    margin: 10px 0 5px 0;
+  }
+  
+  .about-page .team-member p {
+    font-size: 1em;
+    color: #666;
+  }
