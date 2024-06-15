@@ -6,11 +6,11 @@ registerForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     const firstname = document.querySelector("#firstname").value;
-    const lastname = document.querySelector("#lasname").value;
+    const lastname = document.querySelector("#lastname").value;
     const password = document.querySelector("#password").value;
-    const email = document.querySelector("#password").value;
+    const email = document.querySelector("#emial").value;
     const city = document.querySelector("#city").value;
-    const state = document.querySelector("#password").value;
+    const state = document.querySelector("#state").value;
     const country = document.querySelector("#country").value;
 
 
@@ -33,7 +33,7 @@ console.log('User Data:', userData);
 
     const registerUSer = async (userData) => {
         try {
-            const response = await fetch("/register", {
+            const response = await fetch("/api/register", {
                 method: "POST",
                 headers: {
                     'Content-Type': "application/json"

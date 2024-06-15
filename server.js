@@ -3,6 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers')
+const userRoutes = require('./controllers/api/userRoutes.js')
 // const helpers = require('./utils/helpers');
 
 const sequelize = require('./config/connection');
@@ -40,6 +41,8 @@ app.set('view engine', 'handlebars');
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
     app.use(express.static(path.join(__dirname, 'public')));
+
+    app.use('/register', userRoutes);
 
 
     app.use(routes);
