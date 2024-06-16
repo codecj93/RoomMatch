@@ -1,11 +1,12 @@
 {
-  "name": "RoomMatch",
+  "name": "roommatch",
   "version": "1.0.0",
   "description": "Website to help students find out which roomates will be best for them",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seeds": "node seeds/seed.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
@@ -20,5 +21,7 @@
     "node": "^20.14.0",
     "pg": "^8.12.0",
     "sequelize": "^6.37.3"
-  }
+  },
+  "author": "",
+  "license": "ISC"
 }

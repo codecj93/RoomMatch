@@ -32,34 +32,34 @@ router.get('/register', async (req, res) => {
       hobby3: {
         values: ['Sports', 'Museums', 'Reading', 'Dance', 'Gardening', 'Painting', 'Writing', 'Drawing', 'Musical Instrument', 'Hiking', 'Exercise', 'Baking', 'Cooking', 'Yoga', 'Knitting', 'Games and Puzzles', 'Shopping', 'Photography', 'Blogging'],
       },
-      "Preferences 1": {
+      "Preference 1": {
         values: ['Messy', 'Clean'],
       },
-      "Preferences 2": {
+      "Preference 2": {
         values: ['Night Owl', 'Early Sleeper'],
       },
-      "Preferences 3": {
+      "Preference 3": {
         values: ['Partygoer', 'Homebody'],
       },
-      "Preferences 4": {
+      "Preference 4": {
         values: ['Gym Rat', 'Allergic to the Gym'],
       },
-      "Preferences 5": {
+      "Preference 5": {
         values: ['TV Connoisseur', 'TV is not really my thing'],
       },
-      "Preferences 6": {
+      "Preference 6": {
         values: ['Always playing music', 'Peace and Quiet'],
       },
-      "Preferences 7": {
+      "Preference 7": {
         values: ['Enjoys the Outdoors', 'Not a nature fan'],
       },
-      "Preferences 8": {
+      "Preference 8": {
         values: ['Fall or Spring type of person', 'Winter or Summer type of person'],
       },
-      "Preferences 9": {
+      "Preference 9": {
         values: ['Marvel', 'DC'],
       },
-      "Preferences 10": {
+      "Preference 10": {
         values: ['Early Riser', 'Late Sleeper'],
 
       },

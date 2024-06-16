@@ -23,15 +23,11 @@ User.init(
         lastname: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true,
-            validate: {
-                isEmail: true,
-            }
         },
         email: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: true,
+            unique: false,
             validate: {
                 isEmail: true,
             },
@@ -81,52 +77,52 @@ User.init(
             values: ['Sports', 'Museums', 'Reading', 'Dance', 'Gardening', 'Painting', 'Writing', 'Drawing', 'Musical Instrument', 'Hiking', 'Exercise', 'Baking', 'Cooking', 'Yoga', 'Knitting', 'Games and Puzzles', 'Shopping', 'Photography', 'Blogging'],
             allowNull: false
         },
-        Preferences1: {
+        Preference1: {
             type: DataTypes.ENUM,
             values: ['Messy', 'Clean'],
             allowNull: false
         },
-        Preferences2: {
+        Preference2: {
             type: DataTypes.ENUM,
             values:['Night Owl', 'Early Sleeper'],
             allowNull: false
         },
-        Preferences3: {
+        Preference3: {
             type: DataTypes.ENUM,
             values: ['Partygoer', 'Homebody'],
             allowNull: false
         },
-        Preferences4: {
+        Preference4: {
             type: DataTypes.ENUM,
             values: ['Gym Rat', 'Allergic to the Gym'],
             allowNull: false
         },
-        Preferences5: {
+        Preference5: {
             type: DataTypes.ENUM,
             values: ['TV Connoisseur', 'TV is not really my thing'],
             allowNull: false
         },
-        Preferences6: {
+        Preference6: {
             type: DataTypes.ENUM,
             values: ['Always playing music', 'Peace and Quiet'],
             allowNull: false
         },
-        Preferences7: {
+        Preference7: {
             type: DataTypes.ENUM,
             values: ['Enjoys the Outdoors', 'Not a nature fan'],
             allowNull: false
         },
-        Preferences8: {
+        Preference8: {
             type: DataTypes.ENUM,
             values: ['Fall or Spring type of person', 'Winter or Summer type of person'],
             allowNull: false
         },
-        Preferences9: {
+        Preference9: {
             type: DataTypes.ENUM,
             values: ['Marvel', 'DC'],
             allowNull: false
         },
-        Preferences10: {
+        Preference10: {
             type: DataTypes.ENUM,
             values: ['Early Riser', 'Late Sleeper'],
             allowNull: false

@@ -1,6 +1,8 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
+console.log(process.env); // Log environment variables
+
 let sequelize;
 
 if (process.env.DB_URL) {
