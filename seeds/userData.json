@@ -1,0 +1,25 @@
+[
+  {
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "jdoe@example.com",
+    "password": "password123@",
+    "city": "New York",
+    "state": "NY",
+    "country": "USA",
+    "course": "Philosophy",
+    "hobby1": "Sports",
+    "hobby2": "Museums",
+    "hobby3": "Reading",
+    "Preference1": "Messy",
+    "Preference2": "Early Sleeper",
+    "Preference3": "Partygoer",
+    "Preference4": "Gym Rat",
+    "Preference5": "TV Connoisseur",
+    "Preference6": "Always playing music",
+    "Preference7": "Enjoys the Outdoors",
+    "Preference8": "Winter or Summer type of person",
+    "Preference9": "Marvel",
+    "Preference10": "Early Riser"
+  }
+]

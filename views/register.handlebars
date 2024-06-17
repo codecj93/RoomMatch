@@ -1,6 +1,6 @@
 <div class="container">
   <h2>Register</h2>
-  <form action="/register" method="POST">
+  <form action="/user" method="POST">
     <label for="firstname">First Name:</label>
     <input type="text" id="firstname" name="firstname">
     <label for="lastname">Last Name:</label>
@@ -15,14 +15,25 @@
     <input type="text" id="state" name="state">
     <label for="country">Country2:</label>
     <input type="text" id="country" name="country">
-    {{#each questions as |question|}}
+
+     {{#each questions as |question key|}}
+      <label>{{key}}:</label>
+      <select id="{{key}}">
+        {{#each question.values}}
+          <option value="{{this}}">{{this}}</option>
+        {{/each}}
+      </select>
+    {{/each}}
+
+    {{!-- {{#each questions as |question|}}
     <label>{{@key}}:</label>
     <select>
       {{#each question.values}}
       <option value="{{this}}">{{this}}</option>
       {{/each}}
     </select>
-    {{/each}}
+    {{/each}} --}}
+
     <button id="register" type="submit">Register</button>
   </form>
   <p>Already have an account? <a href="/login">Log In</a></p>

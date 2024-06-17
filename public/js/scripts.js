@@ -1,59 +1,63 @@
 const registerForm = document.querySelector("#register");
 
-
-
 registerForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    const firstname = document.querySelector("#firstname").value;
-    const lastname = document.querySelector("#lasname").value;
-    const password = document.querySelector("#password").value;
-    const email = document.querySelector("#password").value;
-    const city = document.querySelector("#city").value;
-    const state = document.querySelector("#password").value;
-    const country = document.querySelector("#country").value;
+    const formData = {
+        firstname: document.querySelector("#firstname").value,
+        lastname: document.querySelector("#lastname").value,
+        email: document.querySelector("#email").value,
+        password: document.querySelector("#password").value,
+        city: document.querySelector("#city").value,
+        state: document.querySelector("#state").value,
+        country: document.querySelector("#country").value,
+        course: document.querySelector("#course").value,
+        hobby1: document.querySelector("#hobby1").value,
+        hobby2: document.querySelector("#hobby2").value,
+        hobby3: document.querySelector("#hobby3").value,
+        'Preference 1': document.querySelector("#Preference1").value,
+        'Preference 2': document.querySelector("#Preference2").value,
+        'Preference 3': document.querySelector("#Preference3").value,
+        'Preference 4': document.querySelector("#Preference4").value,
+        'Preference 5': document.querySelector("#Preference5").value,
+        'Preference 6': document.querySelector("#Preference6").value,
+        'Preference 7': document.querySelector("#Preference7").value,
+        'Preference 8': document.querySelector("#Preference8").value,
+        'Preference 9': document.querySelector("#Preference9").value,
+        'Preference 10': document.querySelector("#Preference10").value,
+    };
 
+    try {
+        const response = await fetch("/api/user", {
+            method: "POST",
+            headers: {
+                'Content-Type': "application/json"
+            },
+            body: JSON.stringify(formData)
+        });
 
-const userData = {
-    firstname,
-    lastname,
-    email,
-    password,
-    city,
-    state,
-    country,
-};
-
-await registerUser(userData);
-
+        if (response.ok) {
+            const data = await response.json();
+            console.log('User registered successfully:', data);
+           
+        } else {
+            throw new Error('Failed to register user');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        
+    }
 });
 
-console.log('User Data:', userData);
 
 
-    const registerUSer = async (userData) => {
-        try {
-            const response = await fetch("/register", {
-                method: "POST",
-                headers: {
-                    'Content-Type': "application/json"
-                },
-                body: JSON.stringify(userData)
-                });
-                console.log('Response status:', response.status);
-                const data = await response.json();
-                console.log('Response data:', data);
-                console.log(data);
-            } catch (error) {
-                console.error('Error:', error);
-            }
-        };
-    
+
+
+
+
+
+
         
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
