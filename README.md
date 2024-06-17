@@ -14,7 +14,7 @@
     Open the cloned repository in a source code editor e.g. Visual Studio Code.Open integrated terminal on index.jsEnter “node index.js” in the command linePresented with npm inquirer questions through sequential order within the directory - the user must provide essential README information in order to proceed to the next question in sequence.Once completed a file named 
     
  ## Usage Instructions:
- ##User Story
+ ## User Story
 As a student looking for a compatible roommate, I want to find someone with similar hobbies and interests, so I can have a comfortable and enjoyable living experience in my hostel.
 ## Acceptance Criteria
 Use Node.js and Express.js to create a RESTful API.
