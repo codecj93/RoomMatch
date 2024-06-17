@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 
-router.post('/api/user', async (req, res) => {
+
+router.post('/', async (req, res) => {
   try {
     const userData = {
       firstname: req.body.firstname,
@@ -27,18 +28,19 @@ router.post('/api/user', async (req, res) => {
             Preference9: req.body['Preference 9'],
             Preference10: req.body['Preference 10'],
         };
-        userData.password = await bcrypt.hash(userData.password, 10);
+        
 
 const newUser = await User.create(userData);
 
     req.session.save(() => {
-      req.session.user_id = userUser.id;
+      req.session.user_id = newUser.id;
       req.session.logged_in = true;
 
-      res.status(200).json(newUser);
+      res.status(303).appendHeader('location','/').end()
     });
   } catch (err) {
-    res.status(400).json(err);
+    console.error(err)
+    res.status(500).json(err);
   }
 });
 
