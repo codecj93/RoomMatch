@@ -62,7 +62,7 @@ Have a quality README (with unique name, description, technologies used, screens
     [https://github.com/ParthKapadia2207]
     [https://github.com/omarmetawee]
     © 2024 Confidential and Proprietary. All Rights Reserved.
-    ![image](https://github.com/codecj93/RoomMatch/assets/160433914/76188597-789b-4749-92ac-6264c22b03c9)
+
 
 ![Screenshot 2024-06-17 at 8 30 47 PM](https://github.com/codecj93/RoomMatch/assets/160433914/1b920453-cc76-4dd8-859b-65cf1f0f2b26)
 
